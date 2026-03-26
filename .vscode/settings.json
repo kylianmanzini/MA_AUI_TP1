@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "TP_AR.slnx"
+    "dotnet.defaultSolution": "MA_AUI_TP1.slnx"
 }
