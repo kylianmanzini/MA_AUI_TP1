@@ -22,20 +22,14 @@ public class bouncingColorChange : MonoBehaviour
 
          if (visualsRenderer != null)
         {
-            Material mat = visualsRenderer.material;
-
             Color newColor = Random.ColorHSV();
 
             Debug.Log("New color: " + newColor);
 
-            if (mat.HasProperty("_BaseColor"))
-            {
-                mat.SetColor("_BaseColor", newColor);
-            }
-            else
-            {
-                mat.color = newColor;
-            }
+            visualsRenderer.material.SetColor("_BaseColor", newColor);
+            visualsRenderer.material.SetColor("_Color", newColor);
+
+            visualsRenderer.sharedMaterial.color = newColor;
         }
     }
 }
