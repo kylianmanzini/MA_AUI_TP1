@@ -22,14 +22,15 @@ public class bouncingColorChange : MonoBehaviour
 
          if (visualsRenderer != null)
         {
-            Color newColor = Random.ColorHSV();
+            increaseScale(1.15f);
+        }
+    }
 
-            Debug.Log("New color: " + newColor);
-
-            visualsRenderer.material.SetColor("_BaseColor", newColor);
-            visualsRenderer.material.SetColor("_Color", newColor);
-
-            visualsRenderer.sharedMaterial.color = newColor;
+    void increaseScale(float scaleMultiplier)
+    {
+        if (visualsRenderer != null)
+        {
+            visualsRenderer.transform.localScale *= scaleMultiplier;
         }
     }
 }
