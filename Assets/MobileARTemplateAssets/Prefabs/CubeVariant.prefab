@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 1652468872093772896, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3342655644164419228, guid: ebd7292e888c84f05924605e51048072, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -68,6 +72,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4912199051499318201, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_MaterialIndex
+      value: -126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -102,6 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   visualsRenderer: {fileID: 4907341669316172822}
+  respawnPrefab: {fileID: 0}
 --- !u!65 &596566528896238561
 BoxCollider:
   m_ObjectHideFlags: 0
